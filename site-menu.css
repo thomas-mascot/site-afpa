@@ -13,6 +13,9 @@ nav ul li a:hover{
 	background-color: #E8582E;
 	color: #fff;
 }
+.btn[type="submit"]{
+	color: #fff;
+}
 .carousel {
   width:1920px;
   height:540px;
