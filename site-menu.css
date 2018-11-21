@@ -42,7 +42,7 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #007b5e !important;    
+    background: #007b5e !important;        
 }
 #footer h5{
 	padding-left: 10px;
@@ -102,5 +102,5 @@ section .section-title {
     border-left: transparent;
     padding-bottom: 0px;
     margin-bottom: 10px;
-}
-}
+}}
+
