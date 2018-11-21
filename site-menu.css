@@ -1,7 +1,31 @@
-a{
-	color: black;
+html body{
+	background-color: #EFF0FF;
 }
-	
-a:hover{
-	color: red;
+nav{
+	background-color: #FF321D;
+}
+nav ul li a{	
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+nav ul li a:hover{
+	background-color: #E8582E;
+	color: #fff;
+}
+.carousel {
+  width:1920px;
+  height:540px;
+}
+.card img{
+	height: 350px;
+
+}
+.btn{
+	background-color: #FF321D;
+	border-style: none
+}
+.btn:hover{
+	background-color: #E8582E;
+	border-style: none;
 }
