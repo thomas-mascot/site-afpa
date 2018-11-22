@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mar. 20 nov. 2018 à 20:45
+-- Généré le :  jeu. 22 nov. 2018 à 00:38
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `phplogin`
+-- Base de données :  `boutique1`
 --
 
 -- --------------------------------------------------------
@@ -31,6 +31,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `username` varchar(100) NOT NULL,
+  `sexe` varchar(10) NOT NULL,
   `mail` char(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -39,16 +40,22 @@ CREATE TABLE `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `mail`, `password`) VALUES
-(3, 'cyril', 'cc@gmail.fr', '0123'),
-(4, 'Grominet', 'chat@papat.fr', '0000'),
-(5, 'a', 'a@a.a', 'a'),
-(6, 'skateur', 'sk8@live.fr', 'sk8'),
-(7, 's', 's', 's'),
-(8, 'tool', 'tool@tool.fr', 'tool'),
-(9, 'prout', 'prout@live.fr', '012345'),
-(10, 'diwait', 'diwait@live.fr', 'picatchou'),
-(11, 'tool1', 'tool1@tool.fr', 'tool1');
+INSERT INTO `users` (`id`, `username`, `sexe`, `mail`, `password`) VALUES
+(3, 'cyril', '', 'cc@gmail.fr', '0123'),
+(4, 'Grominet', '', 'chat@papat.fr', '0000'),
+(5, 'a', '', 'a@a.a', 'a'),
+(6, 'skateur', '', 'sk8@live.fr', 'sk8'),
+(7, 's', '', 's', 's'),
+(8, 'tool', '', 'tool@tool.fr', 'tool'),
+(9, 'prout', '', 'prout@live.fr', '012345'),
+(10, 'diwait', '', 'diwait@live.fr', 'picatchou'),
+(11, 'tool1', '', 'tool1@tool.fr', 'tool1'),
+(12, 'masculin', '', 'tool2@tool.fr', 'tool2'),
+(13, 'ty', 'feminin', 'ty', '0000'),
+(14, 'p', 'masculin', 'p', 'p'),
+(15, 'aaa', 'masculin', 'aaa', 'aaa'),
+(16, 'c', 'masculin', 'c', 'c'),
+(17, 'z', 'masculin', 'z', 'z');
 
 --
 -- Index pour les tables déchargées
@@ -69,7 +76,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
