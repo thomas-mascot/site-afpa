@@ -1,0 +1,5 @@
+Dans mysql
+Créer la base données : boutique1
+Selectionner l'onglet importation
+rechercher le fichier
+executer
